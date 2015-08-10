@@ -1,0 +1,17 @@
+﻿<div ng-controller="AuthenticationController" style="text-align: center">
+    Введите номер карты
+    <form name="authenticationForm" novalidate>
+        <div ng-show="authenticationForm.$submitted" style="text-align:center;color:red">
+            <span ng-show="authenticationForm.input.$error.required || authenticationForm.input.$error.minlength">Введите правильный номер карты</span>
+        </div>
+        <div class="input-wrapper" style="text-align:center">
+            <input ng-model="input" name="input" style="width: 192px" ng-minlength="19" ng-maxlength="19" required="" value="">
+        </div>
+        <div class="numpad_wrapper" style="width: 120px; height: 180px; margin:10px auto">
+            <numpad></numpad>
+        </div>
+        <div style="text-align:center">
+            <input type="submit" ng-click="authenticateCardNumber()" value="ok" style="padding: 10px">
+        </div>
+    </form>
+</div>

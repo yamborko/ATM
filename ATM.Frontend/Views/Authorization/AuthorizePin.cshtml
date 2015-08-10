@@ -1,0 +1,19 @@
+﻿<div ng-controller="AuthorizationController" style="text-align: center">
+    Введите пин-код
+    <form name="authorizationForm" novalidate>
+        <div ng-show="authorizationForm.$submitted" style="text-align:center;color:red">
+            <span ng-show="authorizationForm.input.$error.required || authorizationForm.input.$error.minlength">Введите правильный пин-код</span>
+        </div>
+        <div class="input-wrapper" style="text-align:center">
+            <input ng-model="input" name="input" style="width: 192px" ng-minlength="4" ng-maxlength="4" required="" maxlength="4">
+        </div>
+        <div class="numpad_wrapper" style="width: 120px; height: 180px; margin:10px auto">
+            <numpad></numpad>
+        </div>
+        <div style="text-align:center">
+            <input type="submit" ng-click="authorizePin()" value="ok" style="padding: 10px">
+        </div>
+    </form>
+    
+</div>
+<a ui-sref="authentication" style="margin-top: 20xp;">Назад</a>

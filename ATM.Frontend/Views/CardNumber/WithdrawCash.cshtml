@@ -1,0 +1,26 @@
+﻿<div ng-controller="CashWithdrawalController" style="text-align: center">
+    <div ng-show="report == null">
+        Введите сумму:
+        <form name="authenticationForm" novalidate>
+            <div ng-show="authenticationForm.$submitted" style="text-align:center;color:red">
+                <span ng-show="authenticationForm.input.$error.required || authenticationForm.input.$error.minlength || authenticationForm.input.$error.min">Лимит 50000</span>
+            </div>
+            <div class="input-wrapper" style="text-align:center">
+                <input type="number" ng-model="input" name="input" style="width: 192px" ng-minlength="1" ng-maxlength="50000" required="" min="1" value="">
+            </div>
+            <div class="numpad_wrapper" style="width: 120px; height: 180px; margin:10px auto">
+                <numpad></numpad>
+            </div>
+            <div style="text-align:center">
+                <input type="submit" ng-click="withdrawCash()" value="ok" style="padding: 10px">
+            </div>
+        </form>
+    </div>
+    <div ng-show="report != null">
+        <span>Номер карты: {{report.CardNumber}}</span><br />
+        <span>Время транзакции: {{report.TransactionTime}}</span><br />
+        <span>Снятая сумма: {{report.Amount}}</span><br />
+        <span>Баланс: {{report.Balance}}</span><br />
+    </div>
+</div>
+<session-controls></session-controls>
