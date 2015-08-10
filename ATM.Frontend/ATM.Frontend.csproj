@@ -156,9 +156,9 @@
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-resource.js" />
     <Content Include="Scripts\angular-resource.min.js" />
+    <Content Include="Scripts\angular-ui-router.js" />
     <Content Include="Scripts\angular-ui-router.min.js" />
     <Content Include="Scripts\angular.js" />
-    <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\Controllers\AuthenticationController.js" />
     <Content Include="Scripts\Controllers\AuthorizationController.js" />
@@ -170,6 +170,7 @@
     <Content Include="Scripts\Services\AuthorizationService.js" />
     <Content Include="Scripts\Services\CardNumberService.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Scripts\angular.min.js" />
     <Content Include="Templates\Numpad.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -191,7 +192,6 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Views\Authorization\AuthenticateCardNumber.cshtml" />
-    <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\angular-resource.min.js.map" />
     <Content Include="Views\Authorization\AuthorizePin.cshtml" />
     <Content Include="Views\Authorization\Index.cshtml" />
@@ -200,6 +200,9 @@
     <Content Include="Views\CardNumber\WithdrawCash.cshtml" />
     <Content Include="Views\Authorization\SessionControls.cshtml" />
     <Content Include="Views\Base\Error.cshtml" />
+    <None Include="Properties\PublishProfiles\atmfrontend - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\atmfrontend - Web Deploy.pubxml" />
+    <Content Include="Scripts\angular.min.js.map" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ATM.ApiObject\ATM.ApiObjects.csproj">

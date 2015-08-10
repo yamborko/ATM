@@ -9,9 +9,10 @@ namespace ATM.Frontend
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/angular")
-                .Include("~/Scripts/angular.js")
-                .Include("~/Scripts/angular-ui-router.min.js")
-                .Include("~/Scripts/angular-resource.js"));
+                //.Include("~/Scripts/angular.js")
+                //.Include("~/Scripts/angular-ui-router.js")
+                //.Include("~/Scripts/angular-resource.js")
+                );
 
             bundles.Add(new ScriptBundle("~/bundles/angularApp")
                 .Include("~/Scripts/Controllers/NumPadController.js")
@@ -22,7 +23,8 @@ namespace ATM.Frontend
                 .Include("~/Scripts/Controllers/CashWithdrawalController.js")
                 .Include("~/Scripts/Controllers/ErrorsController.js")
                 .IncludeDirectory("~/Scripts/Services/", "*.js")
-                .Include("~/Scripts/app.js"));
+                //.Include("~/Scripts/app.js")
+                );
 
             bundles.Add(new StyleBundle("~/Content/css")
                 .Include("~/Content/site.css"));

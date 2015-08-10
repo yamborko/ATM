@@ -2,14 +2,14 @@
     document.onkeypress = function (e) { event.preventDefault(); };
 
     var app = angular.module('atm', ['ngResource', 'ui.router']);
-    app.service("AuthorizationService", authorizationService);
-    app.service("CardNumberService", cardNumberService);
-    app.controller("AuthenticationController", authenticationController);
-    app.controller("AuthorizationController", authorizationController);
-    app.controller("SessionController", sessionController);
-    app.controller("CardNumberBalanceController", cardNumberBalanceController);
-    app.controller("CashWithdrawalController", cashWithdrawalController);
-    app.controller("ErrorsController", errorsController);
+    app.service("AuthorizationService", ['$resource', authorizationService]);
+    app.service("CardNumberService", ['$resource', cardNumberService]);
+    app.controller("AuthenticationController", ['$scope', '$state', 'AuthorizationService', authenticationController]);
+    app.controller("AuthorizationController", ['$scope', '$state', 'AuthorizationService', authorizationController]);
+    app.controller("SessionController", ['$scope', '$state', 'AuthorizationService', sessionController]);
+    app.controller("CardNumberBalanceController", ['$scope', '$state', 'AuthorizationService', 'CardNumberService', cardNumberBalanceController]);
+    app.controller("CashWithdrawalController", ['$scope', '$state', 'AuthorizationService', 'CardNumberService', cashWithdrawalController]);
+    app.controller("ErrorsController", ['$scope', '$state', '$stateParams', errorsController]);
     
     app.directive('numpad', function () {
         return {
