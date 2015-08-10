@@ -20,7 +20,11 @@
     app.directive('sessionControls', function () {
         return {
             restrict: 'E',
-            templateUrl: '/authorization/sessioncontrols'
+            templateUrl: '/authorization/sessioncontrols',
+            link: function (scope, element, attributes) {
+                scope.back = attributes["back"];
+                scope.exit = JSON.parse(attributes["exit"]);
+            }
         };
     });
 

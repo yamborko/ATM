@@ -2,7 +2,7 @@
     numPadController.call(this, $scope);
     sessionController.call(this, $scope, $state, AuthorizationService);
 
-    $scope.input = 1000;
+    $scope.input = 0;
 
     $scope.addNumber = function(number) {
         $scope.input = $scope.input * 10 + number;

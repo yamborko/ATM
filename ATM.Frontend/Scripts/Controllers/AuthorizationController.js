@@ -2,9 +2,9 @@
     numPadController.call(this, $scope);
     sessionController.call(this, $scope, $state, AuthorizationService);
 
-    $scope.input = "1234";
+    $scope.input = "";
 
-    var pin = "1234";
+    var pin = "";
 
     $scope.addNumber = function (number) {
         if (pin.length < 4) {

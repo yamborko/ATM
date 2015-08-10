@@ -1,1 +1,5 @@
-﻿<br><a ui-sref="navigation">Назад</a><br /><a href="#" ng-click="closeSession()">Выход</a>
+﻿<br>
+
+<a ng-if="back" ui-sref="{{back}}">Назад</a>
+<br />
+<a ng-if="exit" href="#" ng-click="closeSession()">Выход</a>

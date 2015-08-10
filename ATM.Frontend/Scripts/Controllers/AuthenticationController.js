@@ -2,7 +2,7 @@
     numPadController.call(this, $scope);
     sessionController.call(this, $scope, $state, AuthorizationService);
 
-    $scope.input = "1111-2222-3333-4444";
+    $scope.input = "";
     $scope.addNumber = function (number) {
         $scope.input = inputReform($scope.input + number, 4, '-', 3, 16);
     }
