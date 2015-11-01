@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATM.ApiObjects", "ATM.ApiOb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATM.Backend.DalSpecifications", "ATM.Backend.DalSpecifications\ATM.Backend.DalSpecifications.csproj", "{38CB63DA-71F1-4842-9099-5D1709B08C19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{F396B98A-19C4-4C87-ABA9-0FA3E9EA5DD2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATM.Frontend.ModelSpecifications", "ATM.Frontend.ModelSpecifications\ATM.Frontend.ModelSpecifications.csproj", "{15538FDE-7E09-462A-83ED-D21E30DC41DD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATM.Frontend.Model", "ATM.Frontend.Model\ATM.Frontend.Model.csproj", "{D1B4C45D-0574-4CE8-AD15-95E4FC63F54D}"
@@ -50,10 +48,6 @@ Global
 		{38CB63DA-71F1-4842-9099-5D1709B08C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38CB63DA-71F1-4842-9099-5D1709B08C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38CB63DA-71F1-4842-9099-5D1709B08C19}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F396B98A-19C4-4C87-ABA9-0FA3E9EA5DD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F396B98A-19C4-4C87-ABA9-0FA3E9EA5DD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F396B98A-19C4-4C87-ABA9-0FA3E9EA5DD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F396B98A-19C4-4C87-ABA9-0FA3E9EA5DD2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{15538FDE-7E09-462A-83ED-D21E30DC41DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{15538FDE-7E09-462A-83ED-D21E30DC41DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15538FDE-7E09-462A-83ED-D21E30DC41DD}.Release|Any CPU.ActiveCfg = Release|Any CPU

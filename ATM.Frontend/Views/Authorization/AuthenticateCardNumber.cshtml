@@ -1,8 +1,8 @@
 ﻿<div ng-controller="AuthenticationController" style="text-align: center">
-    Введите номер карты
+    Enter a card namber
     <form name="authenticationForm" novalidate>
         <div ng-show="authenticationForm.$submitted" style="text-align:center;color:red">
-            <span ng-show="authenticationForm.input.$error.required || authenticationForm.input.$error.minlength">Введите правильный номер карты</span>
+            <span ng-show="authenticationForm.input.$error.required || authenticationForm.input.$error.minlength">Enter a valid card number</span>
         </div>
         <div class="input-wrapper" style="text-align:center">
             <input ng-model="input" name="input" style="width: 192px" ng-minlength="19" ng-maxlength="19" required="" value="">

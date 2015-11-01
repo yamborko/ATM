@@ -10,22 +10,22 @@ namespace ATM.Frontend.Model.Models
     public static class LocalizationModel
     {
         private static Dictionary<ErrorCodes, String> Errors = new Dictionary<ErrorCodes, string> {
-            { ErrorCodes.Default, "Произошла ошибка" },
-            { ErrorCodes.FailedConnection, "Невозможно подключиться к серверу" },
-            { ErrorCodes.AccountNotExists, "Произошла ошибка" },
-            { ErrorCodes.AtmIsBlocked, "Банкомат временно заблокирован" },
-            { ErrorCodes.AtmNotExists, "Банкомата с таким ID не существует" },
-            { ErrorCodes.CardAuthentication, "Такой номер карты не существует" },
-            { ErrorCodes.CardAuthenticationRequestedValue, "Введите правильный номер карты" },
-            { ErrorCodes.CardNumberIsBlocked, "Карта заблокирована" },
-            { ErrorCodes.CardNumberNotExists, "Карта не существует" },
-            { ErrorCodes.InvalidData, "Плохие данные" },
-            { ErrorCodes.NotEnoughCash, "Недостаточно денег на счету" },
-            { ErrorCodes.PinAuthorization, "Введите правильный пин-код" },
-            { ErrorCodes.PinAuthorizationRequestedValue, "Введите правильный пин-код" },
-            { ErrorCodes.TooLowBalance, "Слишком низкий баланс" },
-            { ErrorCodes.WithdrawAmountRequestedValue, "Лимит снятия 50000" },
-            { ErrorCodes.WrongPinCode, "Введите правильный пин-код" },
+            { ErrorCodes.Default, "Error" },
+            { ErrorCodes.FailedConnection, "Connection problems" },
+            { ErrorCodes.AccountNotExists, "Error" },
+            { ErrorCodes.AtmIsBlocked, "ATM is blocked" },
+            { ErrorCodes.AtmNotExists, "ATM is not exists" },
+            { ErrorCodes.CardAuthentication, "Card is not exists" },
+            { ErrorCodes.CardAuthenticationRequestedValue, "Wrond card number" },
+            { ErrorCodes.CardNumberIsBlocked, "Card number is blocked" },
+            { ErrorCodes.CardNumberNotExists, "Card is not exists" },
+            { ErrorCodes.InvalidData, "Invalid data" },
+            { ErrorCodes.NotEnoughCash, "Low balance" },
+            { ErrorCodes.PinAuthorization, "Wrong pin-code" },
+            { ErrorCodes.PinAuthorizationRequestedValue, "Wrong pin-code" },
+            { ErrorCodes.TooLowBalance, "Low balance" },
+            { ErrorCodes.WithdrawAmountRequestedValue, "Limit 50000" },
+            { ErrorCodes.WrongPinCode, "Wrong pin-code" },
 
         };
 

@@ -21,7 +21,7 @@
                         $state.go("error", { errorCode: response.ErrorCode, errorMessage: response.ErrorMessage, previousPage: "authentication" })
                     }
                 }, function (data) {
-                    $state.go("error", { errorCode: 0, errorMessage: "Невозможно подключиться к серверу", previousPage: "authentication" })
+                    $state.go("error", { errorCode: 0, errorMessage: "Connection problems", previousPage: "authentication" })
                 });
         }
     }
