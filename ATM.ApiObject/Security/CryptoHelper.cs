@@ -18,10 +18,10 @@ namespace ATM.ApiObjects.Security
             RSACryptoServiceProvider rsaProvider = null;
 
             Byte[] encryptedBytes = null;
-
+             
             try
             {
-                // Select target CSP
+                // Select target CSP /
                 cspParams = new CspParameters();
                 cspParams.ProviderType = 1; // PROV_RSA_FULL
                 rsaProvider = new RSACryptoServiceProvider(cspParams);
